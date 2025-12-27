@@ -300,14 +300,14 @@ const portfolioItems = [
         price: "20.000 TL",
         type: "kiralik",
         images: [
-            "assets/images/portfolio/camlik/camlık1.png",
-            "assets/images/portfolio/camlik/camlık2.png",
-            "assets/images/portfolio/camlik/camlık3.png",
-            "assets/images/portfolio/camlik/camlık4.png",
-            "assets/images/portfolio/camlik/camlık5.png",
-            "assets/images/portfolio/camlik/camlık6.png"
+            "camlik_camlık1.png",
+            "camlik_camlık2.png",
+            "camlik_camlık3.png",
+            "camlik_camlık4.png",
+            "camlik_camlık5.png",
+            "camlik_camlık6.png"
         ],
-        coverImage: "assets/images/portfolio/camlik/camlık1.png",
+        coverImage: "camlik_camlık1.png",
         rooms: "2+1",
         area: "100 m²",
         bath: "1",
