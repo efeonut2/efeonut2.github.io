@@ -307,7 +307,7 @@ const portfolioItems = [
             "camlik_camlık5.png",
             "camlik_camlık6.png"
         ],
-        coverImage: "assets/images/portfolio/camlik/camlık1.png",
+        coverImage: "camlik_camlık1.png",
         rooms: "2+1",
         area: "100 m²",
         bath: "1",
