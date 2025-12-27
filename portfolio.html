@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portföy | COACH EMLAK</title>
+    <meta name="description" content="COACH EMLAK portföyündeki en seçkin gayrimenkulleri inceleyin.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .page-header {
+            background-color: var(--secondary);
+            color: white;
+            padding: 8rem 0 4rem;
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .filter-section {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-md);
+            margin-top: -6rem;
+            margin-bottom: 4rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Responsive grid adjustments if needed */
+        .listings-grid {
+            margin-bottom: 5rem;
+        }
+
+        /* Ensure nav works on this page too */
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: var(--shadow-sm);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">COACH <span class="highlight">EMLAK</span></span>
+            </a>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Anasayfa</a></li>
+                <li class="nav-item"><a href="portfolio.html" class="nav-link active">Portföy</a></li>
+                <li class="nav-item"><a href="index.html#about" class="nav-link">Kurumsal</a></li>
+                <li class="nav-item"><a href="index.html#services" class="nav-link">Hizmetler</a></li>
+                <li class="nav-item"><a href="index.html#contact" class="nav-link btn-primary">İletişim</a></li>
+                <li class="nav-item"><a href="portfolio-en.html" class="nav-link"
+                        style="margin-left: 10px; font-weight: bold;">EN</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="section-title" style="color: white; margin-bottom: 1rem;">Portföyümüz</h1>
+            <p style="color: #ddd; max-width: 600px; margin: 0 auto;">Hayalinizdeki gayrimenkulü bulmak için geniş
+                portföyümüzü inceleyin.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Search/Filter Section -->
+        <div class="filter-section animate-up">
+            <div class="search-box">
+                <div class="search-item" style="flex: 2;">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="İlan başlığı, konum veya özellik ara...">
+                </div>
+                <div class="search-item">
+                    <i class="fas fa-home"></i>
+                    <select id="typeFilter">
+                        <option value="">Tüm Tipler</option>
+                        <option value="satilik">Satılık Daire</option>
+                        <option value="kiralik">Kiralık Daire</option>
+                        <option value="villa">Villa</option>
+                        <option value="arsa">Arsa</option>
+                        <option value="isyeri">İş Yeri</option>
+                    </select>
+                </div>
+                <!-- <div class="search-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <select id="locationFilter">
+                        <option value="">Tüm Konumlar</option>
+                        <option value="kadikoy">Kadıköy</option>
+                        <option value="besiktas">Beşiktaş</option>
+                        <option value="sisli">Şişli</option>
+                    </select>
+                </div> -->
+                <button class="search-btn" id="searchBtn">Ara</button>
+            </div>
+        </div>
+
+        <!-- Listings Grid -->
+        <div class="listings-grid" id="portfolioContainer">
+            <!-- Items will be populated by JS -->
+        </div>
+    </main>
+
+    <!-- Listing Detail Modal -->
+    <div id="listingModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-gallery">
+                    <div class="main-image-container">
+                        <img id="modalMainImage" src="" alt="Listing Image">
+                    </div>
+                    <div class="thumbnail-container" id="modalThumbnails">
+                        <!-- Thumbnails will be injected here -->
+                    </div>
+                </div>
+                <div class="modal-details">
+                    <h2 class="modal-title" id="modalTitle">Title</h2>
+                    <div class="modal-location" id="modalLocation"><i class="fas fa-map-marker-alt"></i> Location</div>
+                    <span class="modal-price" id="modalPrice">Price</span>
+
+                    <div class="details-grid" id="modalDetailsGrid">
+                        <!-- Details injected here -->
+                    </div>
+
+                    <p id="modalDescription" style="color: #666; margin-bottom: 2rem; line-height: 1.6;">
+                        <!-- Description injected here -->
+                    </p>
+
+                    <div class="contact-agent-btn">
+                        <a href="https://api.whatsapp.com/send?phone=905322054226" target="_blank" class="btn-primary"
+                            style="width: 100%; display: block; text-align: center;">
+                            <i class="fab fa-whatsapp"></i> İletişime Geç
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text">COACH <span class="highlight">EMLAK</span></span>
+                    <p>© 2025 Tüm Hakları Saklıdır.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Gizlilik Politikası</a>
+                    <a href="#">Kullanım Şartları</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/portfolio.js"></script>
+</body>
+
+</html>
