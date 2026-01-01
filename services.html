@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hizmetlerimiz | COACH EMLAK</title>
+    <meta name="description"
+        content="COACH EMLAK Gayrimenkul Danışmanlık Hizmetleri. Alım, Satım, Kiralama ve Yatırım Danışmanlığı.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-header {
+            background-color: var(--secondary);
+            color: white;
+            padding: 8rem 0 4rem;
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .service-detail-section {
+            padding: 4rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .service-detail-section:last-child {
+            border-bottom: none;
+        }
+
+        .service-detail-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .service-text h2 {
+            font-size: 2rem;
+            color: var(--secondary);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .service-text h2 i {
+            color: var(--primary);
+        }
+
+        .service-text p {
+            margin-bottom: 1rem;
+            color: var(--text-main);
+            line-height: 1.8;
+        }
+
+        .service-text ul {
+            list-style: none;
+            margin-top: 1.5rem;
+        }
+
+        .service-text ul li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.8rem;
+            color: var(--text-main);
+        }
+
+        .service-text ul li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            color: var(--primary);
+            position: absolute;
+            left: 0;
+            top: 2px;
+        }
+
+        .service-icon-large {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 15rem;
+            color: rgba(211, 47, 47, 0.8);
+            /* Significantly increased opacity */
+        }
+
+        @media (max-width: 900px) {
+            .service-detail-container {
+                grid-template-columns: 1fr;
+            }
+
+            .service-icon-large {
+                display: none;
+            }
+        }
+
+        /* Dark mode overrides for this page */
+        [data-theme="dark"] .service-detail-section {
+            border-bottom-color: #333;
+        }
+
+        [data-theme="dark"] .service-text h2 {
+            color: white;
+        }
+
+        [data-theme="dark"] .service-text p,
+        [data-theme="dark"] .service-text ul li {
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="coach-logo-light.png" alt="Coach Logo" class="logo-img">
+                <img src="coach-logo-dark.png" alt="Coach Logo" class="logo-img-dark">
+                <span class="logo-text">COACH <span class="highlight">EMLAK</span></span>
+            </a>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Anasayfa</a></li>
+                <li class="nav-item"><a href="portfolio.html" class="nav-link">Portföyler</a></li>
+                <li class="nav-item"><a href="index.html#about" class="nav-link">Kurumsal</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link active">Hizmetler</a></li>
+                <li class="nav-item"><a href="index.html#contact" class="nav-link btn-primary">İletişim</a></li>
+                <li class="nav-item"><a href="services-en.html" class="nav-link"
+                        style="margin-left: 10px; font-weight: bold;">EN</a></li>
+                <li class="nav-item theme-toggle-item" style="margin-left: 10px; cursor: pointer;">
+                    <i class="fas fa-moon" id="theme-toggle" style="font-size: 1.2rem; color: var(--secondary);"></i>
+                </li>
+            </ul>
+            <div class="kw-logo">
+                <img src="kw-logo.png" alt="KW Kent Logo">
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="section-title" style="color: white; margin-bottom: 1rem;">Hizmetlerimiz</h1>
+            <p style="color: #ddd; max-width: 600px; margin: 0 auto;">Gayrimenkul süreçlerinizde profesyonel çözüm
+                ortağınız.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Alım & Satım -->
+        <section id="alim-satim" class="service-detail-section">
+            <div class="service-detail-container">
+                <div class="service-text animate-up">
+                    <h2><i class="fas fa-home"></i> Alım & Satım Danışmanlığı</h2>
+                    <p>Gayrimenkul alım ve satım süreçleri, doğru yönetilmediğinde stresli ve karmaşık olabilir. Coach
+                        Emlak olarak, bu süreci sizin için şeffaf, hızlı ve karlı bir deneyime dönüştürüyoruz.</p>
+                    <p>Satıcılar için mülkünüzün gerçek değerini belirliyor, profesyonel pazarlama teknikleri ile doğru
+                        alıcı kitlesine ulaşıyoruz. Alıcılar için ise ihtiyaçlarınıza en uygun portföyleri sunarak,
+                        hayalinizdeki mülke güvenle sahip olmanızı sağlıyoruz.</p>
+                    <ul>
+                        <li>Pazar analizi ve doğru fiyatlama</li>
+                        <li>Profesyonel fotoğraf ve video çekimi</li>
+                        <li>Dijital pazarlama ve ilan yönetimi</li>
+                        <li>Tapu ve devir işlemlerinin takibi</li>
+                    </ul>
+                </div>
+                <div class="service-icon-large animate-right">
+                    <i class="fas fa-handshake"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kiralama -->
+        <section id="kiralama" class="service-detail-section delay-1">
+            <div class="service-detail-container">
+                <div class="service-icon-large animate-left">
+                    <i class="fas fa-key"></i>
+                </div>
+                <div class="service-text animate-up">
+                    <h2><i class="fas fa-key"></i> Kiralama Hizmetleri</h2>
+                    <p>Mülkünüzü kiraya verirken veya yeni bir kiralık yer ararken, güvenilirlik en önemli unsurdur.
+                        Mülk sahipleri için güvenilir kiracı profili oluşturuyor, kiracılar için ise bütçelerine ve
+                        yaşam standartlarına en uygun seçenekleri sunuyoruz.</p>
+                    <p>Kiralama sözleşmelerinin hukuki standartlara uygun olarak hazırlanmasından, abonelik işlemlerine
+                        kadar sürecin her aşamasında yanınızdayız.</p>
+                    <ul>
+                        <li>Detaylı kiracı profili incelemesi</li>
+                        <li>Hukuki standartlara uygun kira sözleşmesi</li>
+                        <li>Tahliye taahhütnamesi yönetimi</li>
+                        <li>Depozito ve kira bedeli danışmanlığı</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Yatırım Danışmanlığı -->
+        <section id="yatirim" class="service-detail-section delay-2">
+            <div class="service-detail-container">
+                <div class="service-text animate-up">
+                    <h2><i class="fas fa-chart-line"></i> Yatırım Danışmanlığı</h2>
+                    <p>Gayrimenkul, en güvenli ve kazançlı yatırım araçlarından biridir, ancak doğru zamanda doğru
+                        lokasyona yatırım yapmak uzmanlık gerektirir. Piyasa trendlerini yakından takip ederek,
+                        birikimlerinizi en yüksek getiri potansiyelini sunan projelere yönlendiriyoruz.</p>
+                    <p>Kısa, orta ve uzun vadeli yatırım hedeflerinize uygun stratejiler geliştiriyoruz. Arsa, konut
+                        veya ticari mülk yatırımlarınızda risk analizi yaparak kazancınızı maksimize ediyoruz.</p>
+                    <ul>
+                        <li>Bölgesel değer artış analizleri</li>
+                        <li>Amortisman süresi hesaplama</li>
+                        <li>Kentsel dönüşüm fırsatları</li>
+                        <li>Ticari gayrimenkul yatırım stratejileri</li>
+                    </ul>
+                </div>
+                <div class="service-icon-large animate-right">
+                    <i class="fas fa-coins"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ekspertiz -->
+        <section id="ekspertiz" class="service-detail-section delay-3">
+            <div class="service-detail-container">
+                <div class="service-icon-large animate-left">
+                    <i class="fas fa-gavel"></i>
+                </div>
+                <div class="service-text animate-up">
+                    <h2><i class="fas fa-gavel"></i> Ekspertiz ve Değerleme</h2>
+                    <p>Mülkünüzün gerçek piyasa değerini bilmek, hem satış hem de kiralama süreçlerinde zaman ve para
+                        kaybını önler. Ücretsiz ekspertiz hizmetimizle, mülkünüzün konumu, özellikleri ve güncel piyasa
+                        koşullarını analiz ederek en doğru fiyatı belirliyoruz.</p>
+                    <p>Sadece tahmini değil, veri odaklı raporlarla mülkünüzün değerini kanıtlıyoruz.</p>
+                    <ul>
+                        <li>Ücretsiz ön ekspertiz çalışması</li>
+                        <li>Rakip pazar analizi</li>
+                        <li>Bölgesel rayiç bedel tespiti</li>
+                        <li>Resmi değerleme raporu desteği</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text">COACH <span class="highlight">EMLAK</span></span>
+                    <p>© 2025 Tüm Hakları Saklıdır.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="privacy.html">Gizlilik Politikası</a>
+                    <a href="terms.html">Kullanım Şartları</a>
+                    <a href="kvkk.html">KVKK Metni</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

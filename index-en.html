@@ -27,6 +27,8 @@
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
             <a href="#" class="logo">
+                <img src="coach-logo-light.png" alt="Coach Logo" class="logo-img">
+                <img src="coach-logo-dark.png" alt="Coach Logo" class="logo-img-dark">
                 <span class="logo-text">COACH <span class="highlight">EMLAK</span></span>
             </a>
             <div class="nav-toggle" id="nav-toggle">
@@ -34,13 +36,19 @@
             </div>
             <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
-                <li class="nav-item"><a href="portfolio-en.html" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="portfolio-en.html" class="nav-link">Portfolios</a></li>
                 <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="services-en.html" class="nav-link">Services</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link btn-primary">Contact</a></li>
                 <li class="nav-item"><a href="index.html" class="nav-link"
                         style="margin-left: 10px; font-weight: bold;">TR</a></li>
+                <li class="nav-item theme-toggle-item" style="margin-left: 10px; cursor: pointer;">
+                    <i class="fas fa-moon" id="theme-toggle" style="font-size: 1.2rem; color: var(--secondary);"></i>
+                </li>
             </ul>
+            <div class="kw-logo">
+                <img src="kw-logo.png" alt="KW Kent Logo">
+            </div>
         </div>
     </nav>
 
@@ -51,10 +59,10 @@
             <div class="overlay"></div>
         </div>
         <div class="container hero-content">
-            <h1 class="hero-title animate-up">Discover <span class="text-gradient">Luxury Living</span><br>All Across
-                Turkey</h1>
+            <h1 class="hero-title animate-up">The Right Address for Real Estate Consultancy <br>Based on <span
+                    class="text-gradient">Trust, Honesty and Knowledge</span></h1>
             <p class="hero-subtitle animate-up delay-1">We are here to help you find your dream real estate with our
-                exclusive portfolio.</p>
+                exclusive portfolios.</p>
 
             <form action="portfolio-en.html" method="get" class="search-box animate-up delay-2"
                 style="margin-bottom: 2rem;">
@@ -66,8 +74,18 @@
             </form>
 
             <div class="hero-actions animate-up delay-3">
-                <a href="portfolio-en.html" class="btn-primary" style="margin-right: 1rem;">View Portfolio</a>
-                <a href="#contact" class="btn-secondary" style="color: white; border-color: white;">Contact Us</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSczGVL0ZHvnSuXYKb8C091-KvbN_BU2XsRYQrgxAZ8-Xynnuw/viewform?usp=sharing&ouid=110923298954535412483"
+                    target="_blank" class="btn-primary"
+                    style="background-color: white; color: var(--primary); margin-right: 1rem; font-weight: 700;">
+                    <i class="fas fa-file-alt" style="margin-right: 5px;"></i> Buyer Needs Analysis Form
+                </a>
+                <a href="portfolio-en.html" class="btn-primary" style="margin-right: 1rem;">Portfolios</a>
+                <a href="#contact" class="btn-secondary"
+                    style="color: white; border-color: white; margin-right: 1rem;">Contact Us</a>
+                <a href="https://forms.gle/TFLQGvyAtLEWMSmbA" target="_blank" class="btn-primary"
+                    style="background-color: white; color: var(--primary); font-weight: 700;">
+                    <i class="fas fa-file-alt" style="margin-right: 5px;"></i> SELLER NEEDS ANALYSIS FORM
+                </a>
             </div>
 
             <div class="hero-stats animate-up delay-3">
@@ -94,14 +112,15 @@
                     <i class="fas fa-user-shield"
                         style="font-size: 4rem; color: var(--primary); margin-bottom: 2rem;"></i>
                 </div>
-                <h2 class="section-title animate-up delay-1">Our Exclusive Portfolio</h2>
+                <h2 class="section-title animate-up delay-1">Our Exclusive Portfolios</h2>
                 <p class="section-desc animate-up delay-2"
                     style="max-width: 800px; margin: 0 auto 3rem auto; font-size: 1.2rem;">
-                    Discover our extensive portfolio in Turkey's most exclusive locations. Luxury apartments, villas and
+                    Discover our extensive portfolios in Turkey's most exclusive locations. Luxury apartments, villas
+                    and
                     investment opportunities await you.
                 </p>
                 <div class="animate-up delay-3">
-                    <a href="portfolio-en.html" class="btn-primary">View All Listings <i class="fas fa-arrow-right"
+                    <a href="portfolio-en.html" class="btn-primary">View All Portfolios <i class="fas fa-arrow-right"
                             style="margin-left: 10px;"></i></a>
                 </div>
             </div>
@@ -131,14 +150,14 @@
                     <div class="feature-item">
                         <div class="icon-box"><i class="fas fa-award"></i></div>
                         <div>
-                            <h4>Award Winning Consultancy</h4>
+                            <h4>Right Consultancy</h4>
                             <p>Work with the best experts in the industry.</p>
                         </div>
                     </div>
                     <div class="feature-item">
                         <div class="icon-box"><i class="fas fa-search-location"></i></div>
                         <div>
-                            <h4>Wide Portfolio</h4>
+                            <h4>Wide Portfolio Network</h4>
                             <p>Options at every point in Istanbul and beyond.</p>
                         </div>
                     </div>
@@ -160,42 +179,70 @@
                     <i class="fas fa-home"></i>
                     <h3>Buying & Selling</h3>
                     <p>Professional support to sell your property at its value or to buy your dream house.</p>
-                    <a href="#" class="service-link">Read More</a>
+                    <a href="services-en.html#buying" class="service-link">Read More</a>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-key"></i>
                     <h3>Rental</h3>
                     <p>Creating reliable tenant profiles and managing rental processes.</p>
-                    <a href="#" class="service-link">Read More</a>
+                    <a href="services-en.html#rental" class="service-link">Read More</a>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-chart-line"></i>
                     <h3>Investment Consultancy</h3>
                     <p>We analyze the right investment opportunities in regions with high return potential.</p>
-                    <a href="#" class="service-link">Read More</a>
+                    <a href="services-en.html#investment" class="service-link">Read More</a>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-gavel"></i>
                     <h3>Appraisal</h3>
                     <p>We determine the current market value of your property free of charge.</p>
-                    <a href="#" class="service-link">Read More</a>
+                    <a href="services-en.html#appraisal" class="service-link">Read More</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Buyer Analysis Form Section -->
-    <section class="section form-section" id="buyer-form" style="background-color: var(--bg-off-white);">
+    <!-- Needs Analysis Forms Section -->
+    <section class="section form-section bg-alt" id="forms">
         <div class="container center-btn">
-            <h2 class="section-title animate-up">Buyer Consultant Needs Analysis Form</h2>
-            <p class="section-desc animate-up delay-1" style="max-width: 800px; margin: 0 auto 2rem auto;">
-                Please fill out the form below to help us understand your needs better.
+            <h2 class="section-title animate-up">NEEDS ANALYSIS FORMS</h2>
+            <p class="section-desc animate-up delay-1" style="max-width: 800px; margin: 0 auto 3rem auto;">
+                Please fill out the form that suits your needs so we can serve you better.
             </p>
-            <div class="animate-up delay-2">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSczGVL0ZHvnSuXYKb8C091-KvbN_BU2XsRYQrgxAZ8-Xynnuw/viewform?usp=sharing&ouid=110923298954535412483"
-                    target="_blank" class="btn-primary">
-                    Fill Out Form <i class="fas fa-file-alt" style="margin-left: 10px;"></i>
-                </a>
+
+            <div class="form-cards-container animate-up delay-2"
+                style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;">
+                <!-- ALICI (Buyer) -->
+                <div class="form-card"
+                    style="background: var(--bg-white); padding: 2rem; border-radius: 12px; box-shadow: var(--shadow-md); flex: 1; min-width: 300px; max-width: 500px; text-align: center;">
+                    <div class="icon-box"
+                        style="width: 70px; height: 70px; background: rgba(211, 47, 47, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: var(--primary); font-size: 1.8rem;">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 style="margin-bottom: 1rem;">Buyer Consultant Form</h3>
+                    <p style="margin-bottom: 1.5rem; opacity: 0.8;">Set your criteria for us to find your dream
+                        property.</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSczGVL0ZHvnSuXYKb8C091-KvbN_BU2XsRYQrgxAZ8-Xynnuw/viewform?usp=sharing&ouid=110923298954535412483"
+                        target="_blank" class="btn-primary" style="width: 100%;">
+                        Fill Out Form <i class="fas fa-file-alt" style="margin-left: 5px;"></i>
+                    </a>
+                </div>
+
+                <!-- SATICI (Seller) -->
+                <div class="form-card"
+                    style="background: var(--bg-white); padding: 2rem; border-radius: 12px; box-shadow: var(--shadow-md); flex: 1; min-width: 300px; max-width: 500px; text-align: center;">
+                    <div class="icon-box"
+                        style="width: 70px; height: 70px; background: rgba(211, 47, 47, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: var(--primary); font-size: 1.8rem;">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 style="margin-bottom: 1rem;">Seller Needs Form</h3>
+                    <p style="margin-bottom: 1.5rem; opacity: 0.8;">Contact us to sell your property at its value.</p>
+                    <a href="https://forms.gle/TFLQGvyAtLEWMSmbA" target="_blank" class="btn-primary"
+                        style="width: 100%;">
+                        Fill Out Form <i class="fas fa-file-alt" style="margin-left: 5px;"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -228,12 +275,16 @@
                     </div>
 
                     <div class="social-links">
-                        <a href="https://www.instagram.com/mehmet_onut_kwkent?igsh=MWRvcWc3cWtrMTJzcw%3D%3D"
-                            target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.youtube.com/@MehmetOnutEmlak" target="_blank" title="YouTube"><i
-                                class="fab fa-youtube"></i></a>
-                        <a href="https://kw-kent.kw.com/tr/agent/mehmet-onut/2000026016" target="_blank"
-                            title="KW Profil"><i class="fas fa-globe"></i></a>
+                        <a href="https://www.instagram.com/coach_emlak?igsh=MTI2MGF0dGR1aDJrdw==" target="_blank"
+                            title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/coachemlak-mehmet-%C3%B6n%C3%BCt-b9212b326" target="_blank"
+                            title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61551891720124&locale=tr_TR" target="_blank"
+                            title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.youtube.com/channel/UC9rDeUWl07AknHsos387voA" target="_blank"
+                            title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://kwkent.com.tr/tr/agent/3a1b960f-c49b-a828-8f8f-e865af2efd30" target="_blank"
+                            title="KW Profil"><img src="kw-logo.png" alt="KW"></a>
                         <a href="https://api.whatsapp.com/send?phone=905010323277" target="_blank" title="WhatsApp"><i
                                 class="fab fa-whatsapp"></i></a>
                     </div>
@@ -253,8 +304,9 @@
                     <p>© 2025 All Rights Reserved.</p>
                 </div>
                 <div class="footer-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Use</a>
+                    <a href="privacy-en.html">Privacy Policy</a>
+                    <a href="terms-en.html">Terms of Use</a>
+                    <a href="kvkk-en.html">KVKK Text</a>
                 </div>
             </div>
         </div>

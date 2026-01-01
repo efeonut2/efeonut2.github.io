@@ -148,7 +148,7 @@ const portfolioItems = [
         title_en: "SULTANBEYLI BATTALGAZI DIST. RENTAL 3+1 IN NEW BUILDING",
         location: "Sultanbeyli, Battalgazi Mh.",
         location_en: "Sultanbeyli, Battalgazi Dist.",
-        price: "32.500 TL",
+        price: "30.000 TL",
         type: "kiralik",
         images: [
             "sultanbeyli_sultanbeyli (1).png",
@@ -188,7 +188,7 @@ const portfolioItems = [
             "Kullanım Durumu": "Boş",
             "Site İçerisinde": "Hayır",
             "Aidat (TL)": "1.000",
-            "Depozito (TL)": "32.500",
+            "Depozito (TL)": "30.000",
             "Tapu Durumu": "Kat İrtifaklı"
         },
         details_en: {
@@ -210,7 +210,7 @@ const portfolioItems = [
             "Occupancy": "Vacant",
             "In Complex": "No",
             "Dues (TL)": "1.000",
-            "Deposit (TL)": "32.500",
+            "Deposit (TL)": "30.000",
             "Title Deed": "Construction Servitude"
         }
     },
@@ -291,75 +291,7 @@ const portfolioItems = [
             "Title Deed": "Condo Title"
         }
     },
-    {
-        id: 1,
-        title: "ÇEKMEKÖY ÇAMLIK MAHALLESİ KİRALIK 2+1 BAHÇE KATI",
-        title_en: "CEKMEKOY CAMLIK NEIGHBORHOOD RENTAL 2+1 GARDEN FLOOR",
-        location: "Çekmeköy, Çamlık Mh.",
-        location_en: "Cekmekoy, Camlik Dist.",
-        price: "20.000 TL",
-        type: "kiralik",
-        images: [
-            "camlik_camlık1.png",
-            "camlik_camlık2.png",
-            "camlik_camlık3.png",
-            "camlik_camlık4.png",
-            "camlik_camlık5.png",
-            "camlik_camlık6.png"
-        ],
-        coverImage: "camlik_camlık1.png",
-        rooms: "2+1",
-        area: "100 m²",
-        bath: "1",
-        status: "Kiralık",
-        status_en: "For Rent",
-        description: "Bahçe katında, geniş ve ferah kullanım alanına sahip, doğalgaz kombili kiralık daire.",
-        description_en: "Garden floor, spacious and airy rental apartment with combi heating.",
-        details: {
-            "İlan Tarihi": "11 Aralık 2025",
-            "Emlak Tipi": "Kiralık Daire",
-            "m² (Brüt)": "100",
-            "m² (Net)": "65",
-            "Oda Sayısı": "2+1",
-            "Bina Yaşı": "11-15 arası",
-            "Bulunduğu Kat": "Bahçe Katı",
-            "Kat Sayısı": "4",
-            "Isıtma": "Kombi (Doğalgaz)",
-            "Banyo Sayısı": "1",
-            "Mutfak": "Kapalı",
-            "Balkon": "Var",
-            "Asansör": "Yok",
-            "Otopark": "Yok",
-            "Eşyalı": "Hayır",
-            "Kullanım Durumu": "Boş",
-            "Site İçerisinde": "Hayır",
-            "Aidat (TL)": "150",
-            "Depozito (TL)": "20.000",
-            "Tapu Durumu": "Kat İrtifaklı"
-        },
-        details_en: {
-            "Listing Date": "December 11, 2025",
-            "Property Type": "Apartment for Rent",
-            "m² (Gross)": "100",
-            "m² (Net)": "65",
-            "Rooms": "2+1",
-            "Building Age": "11-15",
-            "Floor": "Garden Floor",
-            "Total Floors": "4",
-            "Heating": "Combi (Fas)",
-            "Bathrooms": "1",
-            "Kitchen": "Closed",
-            "Balcony": "Yes",
-            "Elevator": "No",
-            "Parking": "No",
-            "Furnished": "No",
-            "Occupancy": "Vacant",
-            "In Complex": "No",
-            "Dues (TL)": "150",
-            "Deposit (TL)": "20.000",
-            "Title Deed": "Construction Servitude"
-        }
-    }
+
 ];
 
 const container = document.getElementById('portfolioContainer');
