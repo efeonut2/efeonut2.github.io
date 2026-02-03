@@ -243,7 +243,7 @@ const portfolioItems = [
         status: "Satılık",
         status_en: "For Sale",
         description: "Maltepe Zümrütevler'de, Hukukçular ve İdareciler Sitesi içerisinde, geniş 3+1 satılık daire. Metroya ve E-5'e yakın konumda.",
-        description_en: "Fully furnished, spacious 3+1 for sale apartment in Hukukçular and İdareciler Site in Maltepe Zumrutevler. Close to Metro and E-5.",
+        description_en: "Spacious 3+1 for sale apartment in Hukukçular and İdareciler Site in Maltepe Zumrutevler. Close to Metro and E-5.",
         details: {
             "İlan Tarihi": "14 Ocak 2025",
             "Emlak Tipi": "Satılık Daire",
