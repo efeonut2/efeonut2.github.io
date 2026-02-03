@@ -216,8 +216,8 @@ const portfolioItems = [
     },
     {
         id: 2,
-        title: "MALTEPE ZÜMRÜTEVLER EŞYALI SATILIK 3+1 ARAKAT DAİRE",
-        title_en: "MALTEPE ZUMRUTEVLER FURNISHED FOR SALE 3+1 INTERMEDIATE FLOOR APARTMENT",
+        title: "MALTEPE ZÜMRÜTEVLER SATILIK 3+1 ARAKAT DAİRE",
+        title_en: "MALTEPE ZUMRUTEVLER FOR SALE 3+1 INTERMEDIATE FLOOR APARTMENT",
         location: "Maltepe, Zümrütevler Mh.",
         location_en: "Maltepe, Zumrutevler Dist.",
         price: "8.400.000 TL",
