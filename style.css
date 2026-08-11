@@ -347,10 +347,6 @@ img {
     width: 100%;
 }
 
-.kw-logo {
-    display: none;
-}
-
 @media (min-width: 901px) {
     .nav-container {
         display: grid;
@@ -364,16 +360,6 @@ img {
 
     .nav-menu {
         justify-self: center;
-    }
-
-    .kw-logo {
-        display: block;
-        justify-self: end;
-    }
-
-    .kw-logo img {
-        height: 50px;
-        width: auto;
     }
 }
 
@@ -1024,15 +1010,6 @@ img {
     color: white;
 }
 
-.social-links img {
-    width: 20px;
-    height: auto;
-    transition: var(--transition);
-}
-
-.social-links a:hover img {
-    filter: brightness(0) invert(1);
-}
 
 .contact-form-box {
     padding: 3rem;
